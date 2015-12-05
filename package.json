@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-ml",
+  "version": "0.0.3",
+  "description": "A complete ESLint configuration.",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marius Lundgård <studio@mariuslundgard.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3"
+  }
+}
