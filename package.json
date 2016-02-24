@@ -5,7 +5,7 @@
   "main": "base.js",
   "scripts": {
     "test": "mocha --require babel-register test/**/*.spec.js",
-    "test-travis": "istanbul cover _mocha -- --require babel-core/register -R spec ./test/**/*.spec.js",
+    "test-travis": "istanbul cover _mocha -- --require babel-register -R spec ./test/**/*.spec.js",
     "coveralls": "npm run test-travis -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint rules test"
   },
