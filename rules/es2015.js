@@ -1,9 +1,12 @@
 module.exports = {
   env: {
-    es6: true
+    'es6': true
   },
 
-  parser: 'babel-eslint',
+  parserOptions: {
+    'ecmaVersion': 6,
+    'sourceType': 'module'
+  },
 
   rules: {
     'arrow-body-style': [2, 'as-needed'],
@@ -11,7 +14,8 @@ module.exports = {
     'arrow-spacing': 2,
     'constructor-super': 2,
     'generator-star-spacing': [2, {before: true, after: false}],
-    'no-arrow-condition': 2,
+    'no-confusing-arrow': 2,
+    'no-constant-condition': 2,
     'no-class-assign': 2,
     'no-const-assign': 2,
     'no-dupe-class-members': 2,
