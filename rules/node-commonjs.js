@@ -7,6 +7,6 @@ module.exports = {
     'no-new-require': 2,
     'no-path-concat': 2,
     'no-process-exit': 2,
-    'no-sync': 2,
+    'no-sync': 2
   }
 }

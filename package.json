@@ -1,15 +1,39 @@
 {
   "name": "eslint-config-ml",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A complete ESLint configuration.",
   "main": "base.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require babel-register test/**/*.spec.js",
+    "test-travis": "istanbul cover _mocha -- --require babel-core/register -R spec ./test/**/*.spec.js",
+    "coveralls": "npm run test-travis -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint rules test"
   },
   "author": "Marius Lundgård <studio@mariuslundgard.com>",
   "license": "MIT",
   "peerDependencies": {
-    "babel-eslint": "^4.1.6",
-    "eslint": "^1.10.3"
-  }
+    "eslint": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.6",
+    "eslint": "^2.2.0",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0"
+  },
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariuslundgard/eslint-config-ml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mariuslundgard/eslint-config-ml/issues"
+  },
+  "homepage": "https://github.com/mariuslundgard/eslint-config-ml#readme"
 }

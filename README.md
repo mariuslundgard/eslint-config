@@ -10,12 +10,22 @@ First install the package using [npm](http://npmjs.com/):
 npm install eslint-config-ml
 ```
 
-Then create an `.eslintrc` file:
+Then create an `.eslintrc.json` file:
 
 ```json
 {
   "extends": [
-    "eslint-config-ml"
+    "ml"
+  ]
+}
+```
+
+When not using ES6, extend only the core rules:
+
+```json
+{
+  "extends": [
+    "ml/rules/core"
   ]
 }
 ```
@@ -27,7 +37,7 @@ If you prefer to use semicolons, then add the `semi` rule like this:
 ```json
 {
   "extends": [
-    "eslint-config-ml"
+    "ml"
   ],
   "rules": {
     "semi": [2, "always"]
