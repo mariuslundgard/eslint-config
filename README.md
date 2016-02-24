@@ -1,4 +1,4 @@
-# eslint-config-ml
+# eslint-config-ml [![Build Status](https://travis-ci.org/mariuslundgard/eslint-config-ml.svg?branch=master)](https://travis-ci.org/mariuslundgard/eslint-config-ml) [![Coverage Status](https://img.shields.io/coveralls/mariuslundgard/eslint-config-ml/master.svg?style=flat)](https://coveralls.io/github/mariuslundgard/eslint-config-ml?branch=master) [![npm version](https://img.shields.io/npm/v/eslint-config-ml.svg?style=flat)](https://www.npmjs.com/package/eslint-config-ml)
 
 A complete [ESLint](http://eslint.org/) configuration.
 
